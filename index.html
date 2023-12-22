@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="public/icon.png">
+    <title>SolitarioJs</title>
+    <script src="inicio.js"></script>
+    <script src="mezclar.js"></script>
+    <script src="repartir.js"></script>
+    <script src="arrastrar.js"></script>
+    <script src="newCard.js"></script>
+    <script src="deckUpdate.js"></script>
+    <script src="validarGoal.js"></script>
+    <script src="validarGoal2.js"></script>
+    <script src="columnUpdate.js"></script>
+    <script src="limpiarTablero.js"></script>
+</head>
+<body>
+    <header>
+        <h1>SolitarioJs</h1>
+        <input type="button" value="New Game" onclick="inicio()">
+    </header>
+    <main>
+        <div id="superior">
+            <div id="cardsDeck">
+                <div id="deckBack" class="cardDiv" onclick="newCard()" draggable="false">
+                    <div id="cnt"><h1 id="cntH"></h1></div>
+                    <img title="card back" id="imgDeckBack" src="/public/cards/blue2.png" draggable="false"/>
+                </div>
+                <div id="deckFront" class="cardDiv"><img title="card" id="imgDeckFront" class="imgDeckFront" src="/public/cards/transparente.png"/></div>
+            </div>
+            <div id="cardsGoal">
+                <div id="goalColumn1" class="cardDiv" ondragover="event" ondrop="event"><img title="card" class="goalDiv" id="imgGoal1" src="/public/cards/transparente.png"/></div>
+                <div id="goalColumn2" class="cardDiv" ondragover="event" ondrop="event"><img title="card" class="goalDiv" id="imgGoal2" src="/public/cards/transparente.png"/></div>
+                <div id="goalColumn3" class="cardDiv" ondragover="event" ondrop="event"><img title="card" class="goalDiv" id="imgGoal3" src="/public/cards/transparente.png"/></div>
+                <div id="goalColumn4" class="cardDiv" ondragover="event" ondrop="event"><img title="card" class="goalDiv" id="imgGoal4" src="/public/cards/transparente.png"/></div>
+            </div>
+        </div>
+        <div id="inferior">
+            <div id="cardsColumn1" class="cardDiv cardColumn" draggable="false"><img title="card" id="imgColumn1" src="/public/cards/transparente.png" draggable="false"/></div>
+            <div id="cardsColumn2" class="cardDiv cardColumn" draggable="false"><img title="card" id="imgColumn2" src="/public/cards/transparente.png" draggable="false"/></div>
+            <div id="cardsColumn3" class="cardDiv cardColumn" draggable="false"><img title="card" id="imgColumn3" src="/public/cards/transparente.png" draggable="false"/></div>
+            <div id="cardsColumn4" class="cardDiv cardColumn" draggable="false"><img title="card" id="imgColumn4" src="/public/cards/transparente.png" draggable="false"/></div>
+            <div id="cardsColumn5" class="cardDiv cardColumn" draggable="false"><img title="card" id="imgColumn5" src="/public/cards/transparente.png" draggable="false"/></div>
+            <div id="cardsColumn6" class="cardDiv cardColumn" draggable="false"><img title="card" id="imgColumn6" src="/public/cards/transparente.png" draggable="false"/></div>
+            <div id="cardsColumn7" class="cardDiv cardColumn" draggable="false"><img title="card" id="imgColumn7" src="/public/cards/transparente.png" draggable="false"/></div>
+        </div>
+    </main>
+</body>
+</html>
