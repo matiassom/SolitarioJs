@@ -92,13 +92,8 @@ function arrastrar(){
             // y lo agrega al elemento de destino
             //event.target.appendChild( elementoArrastrado );
 
-            if(origenElemeArrast == "imgDeckFront"){
-                deckUpdate();
-            }
-            
-            if(origenElemeArrast == "column1Class" || origenElemeArrast == "column2Class" || origenElemeArrast == "column3Class" || origenElemeArrast == "column4Class" || origenElemeArrast == "column5Class" || origenElemeArrast == "column6Class" || origenElemeArrast == "column7Class" ){
-                colUpdate();
-            }
+            deckUpdate();
+            colUpdate();
         }
 
         // comprueba si el event.target es una zona de soltar
@@ -110,13 +105,9 @@ function arrastrar(){
             // y lo agrega al elemento de destino
             //event.target.appendChild( elementoArrastrado );
 
-            if(origenElemeArrast == "imgDeckFront"){
-                deckUpdate();
-            }
-
-            if(origenElemeArrast == "column1Class" || origenElemeArrast == "column2Class" || origenElemeArrast == "column3Class" || origenElemeArrast == "column4Class" || origenElemeArrast == "column5Class" || origenElemeArrast == "column6Class" || origenElemeArrast == "column7Class" ){
-                colUpdate();
-            }
+       
+            deckUpdate();
+            colUpdate();
         }
 
         // comprueba si el event.target es una zona de soltar
@@ -128,13 +119,9 @@ function arrastrar(){
             // y lo agrega al elemento de destino
             //event.target.appendChild( elementoArrastrado );
 
-            if(origenElemeArrast == "imgDeckFront"){
-                deckUpdate();
-            }
-
-            if(origenElemeArrast == "column1Class" || origenElemeArrast == "column2Class" || origenElemeArrast == "column3Class" || origenElemeArrast == "column4Class" || origenElemeArrast == "column5Class" || origenElemeArrast == "column6Class" || origenElemeArrast == "column7Class" ){
-                colUpdate();
-            }
+        
+            deckUpdate();
+            colUpdate();
         }
 
         // comprueba si el event.target es una zona de soltar
@@ -146,13 +133,9 @@ function arrastrar(){
             // y lo agrega al elemento de destino
             //event.target.appendChild( elementoArrastrado );
 
-            if(origenElemeArrast == "imgDeckFront"){
-                deckUpdate();
-            }
-
-            if(origenElemeArrast == "column1Class" || origenElemeArrast == "column2Class" || origenElemeArrast == "column3Class" || origenElemeArrast == "column4Class" || origenElemeArrast == "column5Class" || origenElemeArrast == "column6Class" || origenElemeArrast == "column7Class" ){
-                colUpdate();
-            }
+         
+            deckUpdate();
+            colUpdate();
         }
 
     
@@ -184,28 +167,8 @@ function arrastrar(){
             
         }
            
-        if (event.target.id == "column1card"+column1.length ) {
-            event.target.style.background = "";
-            elementoArrastrado.parentNode.removeChild( elementoArrastrado );
-            
-            let idCard = event.target.id;
-            console.log(idCard);
-            let cardColDestino = document.getElementById("cardsColumn1");
-            console.log(cardColDestino);
-            cardColDestino.insertAdjacentHTML("beforeend","<img src="+deck[carta].img+" id='column1card10' class='column1Class' draggable='true' style='position:absolute ; top:50%; left:0%; z-index:3'>");
-            
-            
-
-            if(origenElemeArrast == "imgDeckFront"){
-                deckUpdate();
-            }
-            
-            if(origenElemeArrast == "column1Class" || origenElemeArrast == "column2Class" || origenElemeArrast == "column3Class" || origenElemeArrast == "column4Class" || origenElemeArrast == "column5Class" || origenElemeArrast == "column6Class" || origenElemeArrast == "column7Class" ){
-                colUpdate();
-            }
-        }
-
-        
+      
+        destColumna(event);
      
       
     }, false);
