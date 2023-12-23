@@ -4,11 +4,11 @@ Este es un proyecto personal que desarrollé como parte de mi portafolio. Se tra
 
 ## Demostración en Vivo
 
-Puedes ver una demostración en vivo del juego [aquí](proximamente).
+Puedes ver una demostración en vivo del juego [aquí](https://solitariojs.sombeck.dev/).
 
 ## Características
 
-- **Diseño Responsivo:** La aplicación está diseñada para adaptarse a diferentes tamaños de pantalla, permitiendo una experiencia de juego óptima en dispositivos móviles y de escritorio.
+- **Diseño Responsivo: (No todavia!!) ** La aplicación está diseñada para adaptarse a diferentes tamaños de pantalla, permitiendo una experiencia de juego óptima en dispositivos móviles y de escritorio.
 
 - **Interfaz Intuitiva:** La interfaz de usuario ha sido diseñada de manera intuitiva para que los usuarios puedan entender fácilmente cómo jugar y disfrutar del juego.
 
