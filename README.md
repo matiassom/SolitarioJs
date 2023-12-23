@@ -1,4 +1,4 @@
-﻿# SolitarioJs
+﻿# SolitarioJs - (Actualmente en construcción - 23/12/2023)
  
 Este es un proyecto personal que desarrollé como parte de mi portafolio. Se trata de un juego de cartas solitario implementado con HTML, CSS y JavaScript.
 
