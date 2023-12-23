@@ -29,4 +29,4 @@ Puedes ver una demostración en vivo del juego [aquí](proximamente).
 1. Clona el repositorio o descarga el código fuente.
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/matiassom/SolitarioJs.git
