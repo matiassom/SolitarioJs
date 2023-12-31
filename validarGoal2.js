@@ -1,6 +1,6 @@
 function valGoal2(){
 
-if(carta){
+if(carta>=0){
     if(goal1.length >0 && goal1Autorizado == false && deck[carta].color == deck[goal1[goal1.length-1]].color && deck[carta].suit == deck[goal1[goal1.length-1]].suit && deck[goal1[goal1.length-1]].number == deck[carta].number-1){
         goal1Autorizado=true;
     } 

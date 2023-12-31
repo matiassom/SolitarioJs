@@ -27,11 +27,17 @@ function arrastrar(){
             
 
             //guarda información acerca del objeto arrastrado dependiendo de donde se tomó.
-            origenElemeArrast=="imgDeckFront"&&event.dataTransfer.setData('dato',deckShowed[deckShowed.length-1]);
+            
+            if(origenElemeArrast=="imgDeckFront"){
+                event.dataTransfer.setData('dato',deckShowed[deckShowed.length-1]); 
+                carta = deckShowed[deckShowed.length-1];
+                console.log("ingreso de valor: "+carta);
+            }
 
             for(let i=1; i<8; i++){
-            if (origenElemeArrast == ("column"+i+"Class"))
-                {event.dataTransfer.setData('dato',eval('column'+i)[eval('column'+i).length-1]);
+            if (origenElemeArrast == ("column"+i+"Class")){
+                event.dataTransfer.setData("dato",eval("column"+i)[eval("column"+i).length-1]);
+                carta = eval("column"+i)[eval("column"+i).length-1];
             }}
                 
             // cambia la opacidad del elemento a medio transparente
@@ -57,16 +63,14 @@ function arrastrar(){
         }
 
     
-    carta = event.dataTransfer.getData('dato');
-
+    //carta = event.dataTransfer.getData('dato');
+    
     
     idDest = event.target.id;
     
     
     }, false);
-    
-    
-    
+        
     document.addEventListener("dragleave", function( event ) {
         // comprueba si el event.target es una zona de soltar  
         if ( event.target.className == "goalDiv" ) {
@@ -144,7 +148,6 @@ function arrastrar(){
                 goal1.push(carta);
                 document.getElementById("imgGoal1").setAttribute("src",deck[carta].img);
                 event.target.style.opacity = 1;
-                goal1Autorizado = false;
             }
 
             if(idDest == "imgGoal2" && goal2Autorizado == true){

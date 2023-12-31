@@ -17,12 +17,28 @@ function destColumna(event){
 for(let i=1; i<8; i++){
         let colorCartaCol = eval("column"+i+"[column"+i+".length-1]") && deck[eval("column"+i+"[column"+i+".length-1]")].color; 
         let numCartaCol = deck[eval("column"+i+"[column"+i+".length-1]")] && deck[eval("column"+i+"[column"+i+".length-1]")].number
-        let colorCarta = deck[carta].color;
+        let colorCarta = carta&&deck[carta].color;
+        console.log("carta: "+carta);
         let numCarta = deck[carta].number;
         
-        if(event.target.id == ("column"+i+"card"+(eval("column"+i).length)) && colorCarta != colorCartaCol &&  numCartaCol == numCarta + 1 && eval("column"+i).length > 0){
+        if( event.target.id == ("column"+i+"card"+(eval("column"+i).length)) && colorCarta != colorCartaCol &&  numCartaCol == numCarta + 1 && eval("column"+i).length > 0){
             event.target.style.background = "";
             elementoArrastrado.parentNode.removeChild( elementoArrastrado );
+
+            /*limpiar columna
+            var inferiorDiv = document.getElementById('inferior');
+
+        
+            while (inferiorDiv.firstChild) {
+                inferiorDiv.removeChild(inferiorDiv.firstChild);
+            }
+
+
+
+            //fin de limpiar columna  */
+
+
+
                 
             eval("column"+i).push(carta);
 

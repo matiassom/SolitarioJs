@@ -4,7 +4,7 @@ goal2Autorizado = false;
 goal3Autorizado = false;
 goal4Autorizado = false;
 
-if(carta){
+if(carta>=0){
     if(goal1.length == 0 && deck[carta].number == 1){
         goal1Autorizado = true;
     } 
@@ -21,4 +21,5 @@ if(carta){
         goal4Autorizado = true;
     }
 } 
+
 }
