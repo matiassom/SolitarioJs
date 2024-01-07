@@ -25,13 +25,13 @@ function arrastrar(){
             origenElemeArrast = elementoArrastrado.getAttribute("class");
             idCarta = elementoArrastrado.getAttribute("id");
             
+           
 
             //guarda información acerca del objeto arrastrado dependiendo de donde se tomó.
             
             if(origenElemeArrast=="imgDeckFront"){
                 event.dataTransfer.setData('dato',deckShowed[deckShowed.length-1]); 
                 carta = deckShowed[deckShowed.length-1];
-                console.log("ingreso de valor: "+carta);
             }
 
             for(let i=1; i<8; i++){
@@ -86,6 +86,7 @@ function arrastrar(){
         
         var destinoElemeArrast = event.target.className;
         valGoal2();
+
         
         // comprueba si el event.target es una zona de soltar
         if (event.target.id == "imgGoal1" && goal1Autorizado == true) {
