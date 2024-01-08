@@ -76,7 +76,7 @@ var column7 = [];
 
 
 function inicio(){
-
+    precargarImagenes();
     limpiar();
     Mezclar();
     repartir();

@@ -6,6 +6,8 @@ Este es un proyecto personal que desarrollé como parte de mi portafolio. Se tra
 
 Puedes ver una demostración en vivo del juego [aquí](https://solitariojs.sombeck.dev/).
 
+O bién puedes bajar el código y ejecutarlo con "five server" desde VSCode. Para hacer esto en necesario tambien bajar las imágenes de las cartas.
+
 ## Características
 
 - **Diseño Responsivo: (No todavia!!) ** La aplicación está diseñada para adaptarse a diferentes tamaños de pantalla, permitiendo una experiencia de juego óptima en dispositivos móviles y de escritorio.
