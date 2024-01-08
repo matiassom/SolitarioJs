@@ -20,7 +20,7 @@ O bién puedes bajar el código y ejecutarlo con "five server" desde VSCode. Par
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla 1](https://drive.google.com/uc?id=10OkY6w95Tb4mYLPiQ4D60mTVk4W0C_3k)
+![Captura de Pantalla 1](https://drive.google.com/uc?id=1TIBBX-eKbBR94Hydq6o1CloPRQfDUWhC)
 *Juego de escritorio imagen 1.*
 
 ![Captura de Pantalla 2](https://drive.google.com/uc?id=10OkY6w95Tb4mYLPiQ4D60mTVk4W0C_3k)
