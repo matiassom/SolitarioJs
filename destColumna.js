@@ -66,6 +66,8 @@ for(let j=1; j<8; j++){
     let numCartaCol = deck[eval("column"+j+"[column"+j+".length-1]")] && deck[eval("column"+j+"[column"+j+".length-1]")].number
     let colorCarta = carta && deck[carta].color;
     let numCarta = carta && deck[carta].number;
+
+
     /////Aqui comienza el código para arrastrar varias cartas sobre un lugar vacío.
     for(let i=1; i<8; i++){
         if(origenElemeArrast == "column"+i+"Class" && 
@@ -74,16 +76,13 @@ for(let j=1; j<8; j++){
         idDest == "imgColumn"+j &&
         deck[eval("column"+i)[zindex-1]].number == 13
         ){
-            console.log("Codigo correcto.")
-            console.log(zindex);
-
+           
 
             lastCard = document.getElementById(event.target.id);
-            zindexCard = parseInt(window.getComputedStyle(lastCard).getPropertyValue('z-index')) + 1;
-            percentTop = parseInt(window.getComputedStyle(lastCard).getPropertyValue('top'))+15;
+            zindexCard = 0;//parseInt(window.getComputedStyle(lastCard).getPropertyValue('z-index')) + 1;
+            percentTop = 0;// parseInt(window.getComputedStyle(lastCard).getPropertyValue('top'))+15;
             
-            console.log(lastCard);
-            console.log(zindexCard);
+            
 
             //esta linea de para probar si se eliminan las imagenes en cascada
             elementoArrastrado.remove();
@@ -114,7 +113,7 @@ for(let j=1; j<8; j++){
             
             let origenLength = parseInt(zindex-1);
 
-            //let datoNroCarta = "column"+i+"["+(origenLength-1)+"]";
+            
             
             let cardDePaso = document.getElementById("column"+i+"card"+origenLength);
             
@@ -125,35 +124,6 @@ for(let j=1; j<8; j++){
                 cardDePaso.setAttribute("ondragover","event");
                 cardDePaso.setAttribute("ondrop","event");   
             }
-
-
-
-            console.log(column1);
-            console.log(column2);
-            console.log(column3);
-            console.log(column4);
-            console.log(column5);
-            console.log(column6);
-            console.log(column7);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -204,7 +174,7 @@ for(let j=1; j<8; j++){
                 
                 let origenLength = parseInt(zindex-1);
 
-                //let datoNroCarta = "column"+i+"["+(origenLength-1)+"]";
+                
                 
                 let cardDePaso = document.getElementById("column"+i+"card"+origenLength);
                 
