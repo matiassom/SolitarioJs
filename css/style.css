@@ -151,4 +151,35 @@ img{
     }
 }
 
+.cartafinal1{
+    animation: final 1s linear forwards;
+}
+
+.cartafinal2{
+    animation: final 1s linear forwards;
+}
+
+.cartafinal3{
+    animation: final 1s linear forwards;
+}
+
+.cartafinal4{
+    animation: final 1s linear forwards;
+}
+
+@keyframes final {
+    0% {
+         
+        transform: rotate(0deg);
+    }
+    100% {
+        
+        
+        transform: rotate(7200deg);
+    }
+    
+    
+}
+
+    
 

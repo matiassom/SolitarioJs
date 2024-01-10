@@ -173,7 +173,7 @@ function arrastrar(){
            
       
         destColumna(event);
-     
+     gameEnd();
       
     }, false);
     
