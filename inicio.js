@@ -77,11 +77,33 @@ var column7 = [];
 
 function inicio(){
     precargarImagenes();
+}
+
+function juego(){
     limpiar();
     Mezclar();
     repartir();
     arrastrar();
-  
+
+}
+
+function precargarImagenes() {
+
+    let img = new Image();
+    img.src ="/cards/kingWin.png";
+
+    let imagenesCargadas = 0;
+
+    for (let i = 0; i < 52; i++) {
+        let img = new Image();
+        img.onload = function(){
+            imagenesCargadas++;
+            if(imagenesCargadas === deck.length){
+                juego();
+            }
+        }
+        img.src = deck[i].img;
+    }
 }
 
 
